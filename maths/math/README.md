@@ -76,16 +76,17 @@ Visual Studio Code and Git
 
 To run the project, execute the following command:
 
-Right-click on the HTML file
-and choose the browser you wish.
+cd math
+
+npm start
 
 ### Run tests
 
 To run tests, run the following command:
 
-Right-click on the HTML file
+cd math
 
-Choose the browser you wish.
+npm start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
