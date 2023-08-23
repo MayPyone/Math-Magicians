@@ -3,6 +3,10 @@
   grid-template-columns: 25% 25% 25% 25%;
 }
 
+.buttons:nth-child(2) {
+  background-color: yellow;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -13,6 +17,9 @@ form {
 input {
   width: 98%;
   height: 50px;
+  background-color: gray;
+  color: white;
+  font-size: 20px;
 }
 
 .last {
@@ -21,6 +28,17 @@ input {
 }
 
 button {
-  background-color: plum;
-  height: 50px;
+  height: 60px;
+  border: 0.2px solid black;
+  background-color: rgb(225, 178, 90);
+  font-size: large;
+}
+
+button:hover {
+  background-color: orange;
+  transform: translate(1%, 1%);
+}
+
+button:active {
+  background-color: orangered;
 }
