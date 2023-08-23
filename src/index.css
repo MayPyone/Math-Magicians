@@ -30,15 +30,26 @@ input {
 button {
   height: 60px;
   border: 0.2px solid black;
-  background-color: rgb(225, 178, 90);
   font-size: large;
 }
 
 button:hover {
-  background-color: orange;
   transform: translate(1%, 1%);
 }
 
 button:active {
   background-color: orangered;
+}
+
+.result {
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+  text-align: right;
+  align-items: center;
+  padding: 5% 2%;
+}
+
+.b-orange {
+  background-color: rgb(240, 159, 8);
 }
