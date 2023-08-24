@@ -126,7 +126,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, check my portfolio.
+If you like this project, check my portfolio and give me stars.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
