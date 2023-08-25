@@ -1,10 +1,16 @@
 import './index.css';
 import { Calculates } from './compnents/Calculator';
+import { Quote, Footer } from './Quotes/Quote';
 
 function App() {
   return (
-
-    <Calculates />
+    <>
+      <div className="main">
+        <Calculates />
+        <Quote />
+        <Footer />
+      </div>
+    </>
 
   );
 }
