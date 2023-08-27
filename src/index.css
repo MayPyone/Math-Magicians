@@ -11,7 +11,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: 10% 35%;
+  background-color: yellow;
 }
 
 input {
@@ -52,4 +52,18 @@ button:active {
 
 .b-orange {
   background-color: rgb(240, 159, 8);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 40% 30%;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 0;
+}
+
+.quotes {
+  background-color: rgb(230, 163, 230);
+  padding: 2%;
+  box-shadow: 10px 7px 5px 12px purple;
 }
