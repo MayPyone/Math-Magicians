@@ -4,7 +4,10 @@ import calculate from '../logic/calculate';
 export function Calculates() {
   return (
     <>
-      <ButtonGroup />
+      <div className="calculator">
+        <h2>Let`s do some math</h2>
+        <ButtonGroup className="group" />
+      </div>
     </>
 
   );
