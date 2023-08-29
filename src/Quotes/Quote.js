@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export function Quote() {
+export default function Quote() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
@@ -35,11 +35,5 @@ export function Quote() {
         {`"${data.author}"`}
       </span>
     </div>
-  );
-}
-
-export function Footer() {
-  return (
-    <></>
   );
 }
