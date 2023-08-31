@@ -4,7 +4,7 @@ import App from './App';
 
 test('Testing included links', () => {
   const { getByText } = render(
-      <App />
+    <App />,
   );
 
   const homeLink = getByText('Home');
