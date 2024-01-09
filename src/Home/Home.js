@@ -3,31 +3,16 @@ export default function Home() {
     <div className="home">
       <h2>Welcome to our page!</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Necessitatibus veniam ducimus eligendi nihil, cumque ab eveniet modi architecto quidem,
-        non odit saepe facere voluptas esse mollitia illo fuga exercitationem id dicta
-        iusto eaque numquam quaerat ad!
-        Fugit velit beatae laudantium.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Necessitatibus veniam ducimus eligendi nihil, cumque ab eveniet
-        modi architecto quidem,
-        non odit saepe facere voluptas esse mollitia illo fuga exercitationem
-        id dicta iusto eaque numquam quaerat ad!
-        Fugit velit beatae laudantium.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Necessitatibus veniam ducimus eligendi nihil, cumque ab eveniet modi architecto quidem,
-        non odit saepe facere voluptas esse mollitia illo fuga exercitationem id dicta
-        iusto eaque numquam quaerat ad!
-        Fugit velit beatae laudantium.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Necessitatibus veniam ducimus eligendi nihil, cumque ab eveniet
-        modi architecto quidem,
-        non odit saepe facere voluptas esse mollitia illo fuga exercitationem
-        id dicta iusto eaque numquam quaerat ad!
-        Fugit velit beatae laudantium.
+        Welcome to Math Magician, your gateway to the magical world of mathematics!
+        Here, we&apos;re passionate about making math fun, engaging, and understandable
+        for everyone.
+        Whether you&apos;re a student looking for helpful resources,
+        a teacher seeking innovative teaching tools, or just someone curious about the beauty
+        of math,
+        you&apos;ve come to the right place. Explore our collection of interactive calculators,
+        insightful quotes, and educational articles to enhance your math skills and discover the
+        wonders of this fascinating subject. Join us on this mathematical journey, where every
+        equation is a piece of magic waiting to be unveiled.
       </p>
 
     </div>

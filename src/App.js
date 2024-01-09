@@ -2,7 +2,7 @@ import './index.css';
 import {
   BrowserRouter, Routes, Route, NavLink,
 } from 'react-router-dom';
-import { Calculates } from './compnents/Calculator';
+import Calculates from './compnents/Calculator';
 import Quote from './Quotes/Quote';
 import Home from './Home/Home';
 

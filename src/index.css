@@ -109,3 +109,11 @@ h1 {
   font-size: 30px;
   margin-top: 0%;
 }
+
+.links a {
+  text-decoration: none;
+}
+
+.links a.active {
+  border: 1px solid blue;
+}
