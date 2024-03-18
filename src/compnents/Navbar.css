@@ -58,6 +58,12 @@ li {
     display: block;
   }
 
+  .logo {
+    position: fixed;
+    top: 1%;
+    left: 3%;
+  }
+
   .nav__active .menugroup {
     width: 100px !important;
     color: black;
