@@ -1,34 +1,27 @@
-import './index.css';
-import {
-  BrowserRouter, Routes, Route, NavLink,
-} from 'react-router-dom';
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from './compnents/Navbar';
 import Calculates from './compnents/Calculator';
 import Quote from './Quotes/Quote';
 import Home from './Home/Home';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <header>
-        <nav>
-          <h1>Math Magicians</h1>
-          <div className="links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="about">Calculator</NavLink>
-            <NavLink to="quote">Quotes</NavLink>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <Routes>
+const App = () => {
+ return (
+   <Router>
+    <nav>
+     <Navbar />
+     </nav>
+     <main>
+        <Routes>  
           <Route index element={<Home />} />
-          <Route path="about" element={<Calculates />} />
+          <Route path="/" element={<Home />} />
+          <Route path="calculator" element={<Calculates />} />
           <Route path="quote" element={<Quote />} />
         </Routes>
       </main>
-    </BrowserRouter>
-
-  );
-}
+   </Router>
+ );
+};
 
 export default App;

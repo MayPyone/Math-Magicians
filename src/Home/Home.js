@@ -1,5 +1,6 @@
 export default function Home() {
   return (
+    <div class="container">
     <div className="home">
       <h2>Welcome to our page!</h2>
       <p>
@@ -15,6 +16,7 @@ export default function Home() {
         equation is a piece of magic waiting to be unveiled.
       </p>
 
+    </div>
     </div>
   );
 }
