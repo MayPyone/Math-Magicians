@@ -1,39 +1,50 @@
 import { useState, useEffect } from 'react';
 
 export default function Quote() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
-  useEffect(() => {
+  const fetchData = async () => {
     const involve = {
       headers: { 'X-Api-Key': '8aT24gv6TBZiwqX+BHiGug==VwbWI4RgUoRH1xu0' },
     };
-    const fetchData = async () => {
-      try {
-        const res = await fetch('https://api.api-ninjas.com/v1/quotes?category=forgiveness', involve);
-
-        const json = await res.json();
-        setData(json[0]);
-      } catch (error) {
-        setHasError(true);
+    try {
+      const res = await fetch('https://api.api-ninjas.com/v1/quotes?category=forgiveness', involve);
+      if (!res.ok) {
+        throw new Error('Failed to fetch');
       }
-      setIsLoading(false);
+      const json = await res.json();
+      setData(json[0]);
+    } catch (error) {
+      console.error('Fetch error:', error);
+      setHasError(true);
+    }
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    let isMounted = true; // To avoid setting state on unmounted component
+
+    if (isMounted) {
+      fetchData();
+    }
+
+    return () => {
+      isMounted = false; // Cleanup function to prevent setting state if unmounted
     };
-    fetchData();
-  }, [setData, setIsLoading]);
+  }, []); // Empty dependency array ensures it runs only once after mount
+
   if (hasError) return <div className="quotes">Something went wrong!</div>;
 
-  if (isLoading) { return <div className="quotes">Loading...</div>; }
+  if (isLoading) {
+    return <div className="quotes">Loading...</div>;
+  }
+
   return (
     <div className="quotes">
-      <article>
-        {data.quote}
-      </article>
-      <span className="author">
-        {' '}
-        {`"${data.author}"`}
-      </span>
+      <article>{data.quote}</article>
+      <span className="author">{" "}{`"${data.author}"`}</span>
     </div>
   );
 }
